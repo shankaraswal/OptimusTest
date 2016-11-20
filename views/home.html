@@ -1,0 +1,25 @@
+ <br>
+  <br>
+  <div class="jumbotron text-center row">
+    <h3>Do you want to share your geolocation? Please click on below...</h3> <br />
+    <button ng-click="myFunction()" type="button" class="btn btn-info">Share your location</button>
+</div>
+
+<div id="myModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Confirmation</h4>
+				</div>
+				<div class="modal-body">
+					<p><span class="red">Really,</span> Do you want to  share your geo location? Please click on "Share my location" button.</p>
+					<p class="text-warning">If you don't want to share location click on "No, do not want to share my location".</p>
+				</div>
+				<div class="modal-footer text-center">
+					 <a href="contact" class="btn btn-default" role="button">No, do not want to share my location</a>
+					 <a href="location" class="btn btn-primary" role="button"  >Share my location</a>
+				</div>
+			</div>
+		</div>
+	</div>

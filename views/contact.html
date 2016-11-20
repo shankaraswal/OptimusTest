@@ -1,0 +1,57 @@
+ <br>
+  <br>
+  <div class="jumbotron">
+
+	<div class="row">
+	<div class="col-sm-12 col-md-12  col-lg-6">
+		<div class="panel panel-info">
+			<div class="panel-heading">search by city</div>
+			<div class="panel-body">
+				<input type="text" class="form-control col-sm-6" id="citi"><br /><br />
+				<button ng-click="citiFunction();" class="btn btn-danger" role="button">Submit</button>
+			</div>
+		  </div>
+		  <br />
+			OR <br /><br />
+		<div class="panel panel-info">
+			<div class="panel-heading">search by zip</div>
+			<div class="panel-body">
+				<input type="text" class="form-control col-sm-6" id="zip"> <br /><br />
+				<select class="form-control" id="country">
+					<option>IN</option>
+					<option>US</option>
+					<option>FR</option>
+				</select>
+				<br /><br />
+				<button ng-click="zipFunction();" class="btn btn-danger" type="button">Submit</button>
+			</div>
+		  </div>
+	</div>
+	
+	<div id="" class="col-sm-12 col-md-12  col-lg-6">
+		<div id="" class="alert alert-success">
+			<strong>Weather Detail!</strong>
+			 <div ng-repeat="item in cweather">
+			  <div ng-repeat="(key, val) in item">
+				Weather {{key}}: {{val}}
+			   </div>
+			 </div>
+			<div>Temp: {{temp}}</div>
+			<div>Humidity: 	{{humidity}}</div>
+			<div>Sea Level: {{sealevel}}</div>
+			<div>Ground Level: {{grndlevel}}</div>
+			<div>Wind Speed: {{speed}}</div>
+			<div>Wind Degree: {{deg}}</div>
+			<div>Sunrise: {{sunrise}}</div>
+			<div>Sunset: {{sunset}}</div>
+			<div>Country: {{country}}</div>
+			<div>Name: {{name}}</div>
+		</div>
+	</div>
+  </div>
+</div>
+ <br>
+<br>
+ <div class="row text-right">
+	<a href="home" class="btn btn-warning" role="button">Back</a>
+ </div>

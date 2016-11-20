@@ -1,0 +1,39 @@
+ <br>
+  <br>
+  <div class="jumbotron">
+	<div class="row">
+		<div id="" class="col-sm-12 col-md-12 left col-lg-6">
+			<div id="" class="alert alert-info">
+				<strong>Location Detail!</strong>
+				<div>Country: {{country}}</div>
+				<div>State: {{state}}</div>
+				<div>City: 	{{city}}</div>
+				<div>Latitude: {{latitude}}</div>
+				<div>Longitude: {{longitude}}</div>
+			</div>
+		</div>
+		
+		<div id="" class="col-sm-12 col-md-12 pull-right col-lg-6">
+			<div id="" class="alert alert-success">
+				<strong>Weather Detail!</strong>
+				 <div ng-repeat="item in weathers">
+				  <div ng-repeat="(key, val) in item">
+					Weather {{key}}: {{val}}
+				   </div>
+				 </div>
+				<div>Temp: {{temp}}</div>
+				<div>Humidity: 	{{humidity}}</div>
+				<div>Visibility: {{visibility}}</div>
+				<div>Wind Speed: {{speed}}</div>
+				<div>Wind Degree: {{deg}}</div>
+				<div>Sunrise: {{sunrise}}</div>
+				<div>Sunset: {{sunset}}</div>
+			</div>
+		</div>
+	</div>
+</div>
+ <br>
+<br>
+ <div class="row text-right">
+	<a href="home" class="btn btn-warning" role="button">Back</a>
+ </div>
